@@ -113,13 +113,13 @@ A API possui os seguintes endpoints:
             Authorization: Bearer seu-jwt-token
         ```
     - Exemplo de Resposta:
-    ```json
-        {
-            "produto": "VINHO DE MESA",
-            "quantidade": "217.208.604",
-            "ano": 1970
-        }
-    ```
+        ```json
+            {
+                "produto": "VINHO DE MESA",
+                "quantidade": "217.208.604",
+                "ano": 1970
+            }
+        ```
 - Obter Dados de Processamento
     - URL: `/processamento`
     - Método: `GET`
@@ -130,11 +130,15 @@ A API possui os seguintes endpoints:
             Authorization: Bearer seu-jwt-token
         ```
     - Exemplo de Resposta:
-    ```json
-        {
-            "token": "seu-jwt-token"
-        }
-    ```
+        ```json
+            {
+                "cultivar": "TINTAS",
+                "quantidade": "10.448.228",
+                "ano": 1970,
+                "opcao": "Viníferas",
+                "sem_definicao": "-"
+            }
+        ```
 - Obter Dados de Comercialização
     - URL: `/comercializacao`
     - Método: `GET`
@@ -145,11 +149,13 @@ A API possui os seguintes endpoints:
             Authorization: Bearer seu-jwt-token
         ```
     - Exemplo de Resposta:
-    ```json
-        {
-            "token": "seu-jwt-token"
-        }
-    ```
+        ```json
+            {
+                "produto": "VINHO DE MESA",
+                "quantidade": "98.327.606",
+                "ano": 1970
+            }
+        ```
     
 - Obter Dados de Importação
     - URL: `/importacao`
@@ -161,11 +167,15 @@ A API possui os seguintes endpoints:
             Authorization: Bearer seu-jwt-token
         ```
     - Exemplo de Resposta:
-    ```json
-        {
-            "token": "seu-jwt-token"
-        }
-    ```
+        ```json
+            {
+                "países": "Africa do Sul",
+                "quantidade": "-",
+                "valor": "-",
+                "ano": 1970,
+                "opcao": "Vinhos de mesa"
+            }
+        ```
     
 - Obter Dados de Exportação
     - URL: `/exportacao`
@@ -177,11 +187,15 @@ A API possui os seguintes endpoints:
             Authorization: Bearer seu-jwt-token
         ```
     - Exemplo de Resposta:
-    ```json
-        {
-            "token": "seu-jwt-token"
-        }
-    ```
+        ```json
+            {
+                "países": "Afeganistão",
+                "quantidade": "-",
+                "valor": "-",
+                "ano": 1970,
+                "opcao": "Vinhos de mesa"
+            }
+        ```
 
 
 ### Executando o Projeto
