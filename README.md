@@ -84,20 +84,21 @@ A API possui os seguintes endpoints:
 
 ### Autenticação
 - Login
-    - URL: `/auth/login`
+    - URL: `/token`
     - Método: `POST`
     - Descrição: Autentica o usuário e retorna um token JWT.
     - Exemplo de Requisição:
     ```json
         {
-            "username": "seu-usuario",
-            "password": "sua-senha"
+            "username": "user",
+            "password": "password"
         }
     ```
     - Exemplo de Resposta:
     ```json
         {
-            "token": "seu-jwt-token"
+            "access_token": "seu-jwt-token",
+            "token_type": "bearer"
         }
     ```
 ### Dados
@@ -114,7 +115,9 @@ A API possui os seguintes endpoints:
     - Exemplo de Resposta:
     ```json
         {
-            "token": "seu-jwt-token"
+            "produto": "VINHO DE MESA",
+            "quantidade": "217.208.604",
+            "ano": 1970
         }
     ```
 - Obter Dados de Processamento
@@ -188,8 +191,7 @@ Para iniciar a aplicação, execute o seguinte comando:
 ```bash
 python api/app.py
 ```
-A aplicação estará disponível em http://127.0.0.1:8000.
-A API estará disponível em http://127.0.0.1:5000/.
+A API estará disponível em http://127.0.0.1:8000.
 
 ### Testes
 
