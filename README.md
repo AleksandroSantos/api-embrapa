@@ -49,8 +49,8 @@ Este projeto realiza a ingestão de dados das abas Produção, Processamento, Co
 
 1. Clone o repositório:
     ```bash
-    git clone https://github.com/seu-usuario/seu-repositorio.git
-    cd seu-repositorio
+    git clone https://github.com/AleksandroSantos/api-embrapa.git
+    cd api-embrapa
     ```
 
 2. Crie um ambiente virtual (opcional, mas recomendado):
