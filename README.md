@@ -216,3 +216,6 @@ Para executar os testes unitários, utilize o comando:
 python -m pytest
 ```
 
+### Documentação da API
+A documentação da API estará disponível em http://127.0.0.1:8000/docs.
+
